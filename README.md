@@ -63,20 +63,43 @@ To enable SSH on your Raspberry Pi before booting for the first time, follow the
 
 1. Insert the SD card into your Raspberry Pi and power it on.
 2. Use **Advanced IP Scanner** (or another network tool) to find the IP address of your Raspberry Pi on the local network. Look for a device named `raspberrypi` or similar.
-3. Once you have the IP address, open **PuTTY** (or use the terminal on Linux/macOS) and enter the following command:
+3. Once you have the IP address, open **PuTTY**  and enter the following IP address or USERNAME
 
-    ```bash
-    ssh pi@<IP_ADDRESS>
-    ```
+![putty](putty.PNG)
+   
+5. Enter the password when prompted. If using the default `pi` user, the default password is `raspberry` (you can change this later).
+   if it is changed use the new username and passwprd
 
-    Replace `<IP_ADDRESS>` with the actual IP address of your Raspberry Pi.
-
-4. Enter the password when prompted. If using the default `pi` user, the default password is `raspberry` (you can change this later).
-
+## first 5 steps focused on accessing the Raspberry Pi via the command line (SSH)
 ---
+## Remote Control Method (Access Raspberry Pi Desktop on Your Laptop Using XRDP, after performing the above five steps)
 
+You can remotely access the Raspberry Pi desktop on your laptop using **XRDP**, which enables Remote Desktop Protocol (RDP) access.
+
+### Step 1: Install XRDP on the Raspberry Pi
+
+1. SSH into your Raspberry Pi using PuTTY or a terminal.
+2. Update the package list:
+   ```bash
+   sudo apt update
+3 install xrdp
+```bash
+    sudo apt install xrdp
+```
+4 Enable XRDP to start automatically:
+```bash
+sudo systemctl enable xrdp
+```
+XRDP is now installed and running on your Raspberry Pi.
+
+5: Use Remote Desktop on Your Laptop
+Windows Users:
+Open the Remote Desktop Connection app (you can search for it in the Start Menu).
+Enter the IP address of your Raspberry Pi (found using Advanced IP Scanner) and click Connect.
+When prompted for credentials:
+- Username: 
+- Password: 
 ## Troubleshooting
-
 - **Cannot find the Raspberry Pi on the network**: Ensure both devices are connected to the same Wi-Fi network.
 - **Permission denied**: Make sure you’ve entered the correct IP address and that SSH is enabled.
 
