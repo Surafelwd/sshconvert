@@ -98,8 +98,12 @@ Open the Remote Desktop Connection app (you can search for it in the Start Menu)
 Enter the IP address of your Raspberry Pi (found using Advanced IP Scanner) and click Connect.
 When prompted for credentials:
 - Username: 
-- Password: 
+- Password:
+
+  
+![putty](remote.jpg)
 ## Troubleshooting
 - **Cannot find the Raspberry Pi on the network**: Ensure both devices are connected to the same Wi-Fi network.
 - **Permission denied**: Make sure you’ve entered the correct IP address and that SSH is enabled.
+##youtube video link
 
