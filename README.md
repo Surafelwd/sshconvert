@@ -102,8 +102,10 @@ When prompted for credentials:
 
   
 ![putty](remote.jpg)
+
 ## Troubleshooting
 - **Cannot find the Raspberry Pi on the network**: Ensure both devices are connected to the same Wi-Fi network.
 - **Permission denied**: Make sure you’ve entered the correct IP address and that SSH is enabled.
-##youtube video link
 
+## youtube video link
+https://youtu.be/Z2Pjy7zpWZk?si=j-GZZkZ_t3y7OTKw
